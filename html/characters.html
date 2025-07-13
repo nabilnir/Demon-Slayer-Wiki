@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer Wiki | Characters</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/demoicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div>
+                <img id="logo" src="../images/logohead.png" alt="Demon Slayer Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="manga.html">Manga</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="login.html" class="btn">Login</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Characters Banner -->
+    <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/characters-bg.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <h1>Demon Slayer Characters</h1>
+            <p>Explore all the characters from the Demon Slayer universe</p>
+        </div>
+    </section>
+
+    <!-- Character Filter -->
+    <section class="character-filter">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Characters</button>
+                <button class="filter-btn" data-filter="demon-slayers">Demon Slayers</button>
+                <button class="filter-btn" data-filter="hashira">Hashira</button>
+                <button class="filter-btn" data-filter="demons">Demons</button>
+                <button class="filter-btn" data-filter="upper-moons">Upper Moons</button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search characters...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Grid -->
+    <section class="character-grid-section">
+        <div class="container">
+            <div class="character-grid">
+                <!-- Demon Slayers -->
+                <div class="character-card" data-category="demon-slayers" id="tanjiro">
+                    <div class="character-img">
+                        <img src="../images/tanjiro-full.jpg" alt="Tanjiro Kamado">
+                    </div>
+                    <div class="character-info">
+                        <h3>Tanjiro Kamado</h3>
+                        <p><strong>Breathing Style:</strong> Water Breathing, Hinokami Kagura</p>
+                        <p>The kind-hearted protagonist who becomes a Demon Slayer to find a cure for his sister Nezuko.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="demon-slayers" id="nezuko">
+                    <div class="character-img">
+                        <img src="../images/nezuko-full.jpg" alt="Nezuko Kamado">
+                    </div>
+                    <div class="character-info">
+                        <h3>Nezuko Kamado</h3>
+                        <p><strong>Type:</strong> Demon</p>
+                        <p>Tanjiro's younger sister who was turned into a demon but retains her human emotions.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="demon-slayers" id="zenitsu">
+                    <div class="character-img">
+                        <img src="../images/zenitsu-full.jpg" alt="Zenitsu Agatsuma">
+                    </div>
+                    <div class="character-info">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p><strong>Breathing Style:</strong> Thunder Breathing</p>
+                        <p>A cowardly Demon Slayer who unleashes incredible power when unconscious.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="demon-slayers" id="inosuke">
+                    <div class="character-img">
+                        <img src="../images/inosuke-full.jpg" alt="Inosuke Hashibira">
+                    </div>
+                    <div class="character-info">
+                        <h3>Inosuke Hashibira</h3>
+                        <p><strong>Breathing Style:</strong> Beast Breathing</p>
+                        <p>A wild and aggressive Demon Slayer who wears a boar's head mask.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Hashira -->
+                <div class="character-card" data-category="hashira" id="rengoku">
+                    <div class="character-img">
+                        <img src="../images/rengoku-full.jpg" alt="Kyojuro Rengoku">
+                    </div>
+                    <div class="character-info">
+                        <h3>Kyojuro Rengoku</h3>
+                        <p><strong>Breathing Style:</strong> Flame Breathing</p>
+                        <p>The Flame Hashira known for his enthusiastic personality and strong sense of justice.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="hashira" id="giyu">
+                    <div class="character-img">
+                        <img src="../images/giyu-full.jpg" alt="Giyu Tomioka">
+                    </div>
+                    <div class="character-info">
+                        <h3>Giyu Tomioka</h3>
+                        <p><strong>Breathing Style:</strong> Water Breathing</p>
+                        <p>The Water Hashira who first encounters Tanjiro and spares Nezuko's life.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="hashira" id="shinobu">
+                    <div class="character-img">
+                        <img src="../images/shinobu-full.jpg" alt="Shinobu Kocho">
+                    </div>
+                    <div class="character-info">
+                        <h3>Shinobu Kocho</h3>
+                        <p><strong>Breathing Style:</strong> Insect Breathing</p>
+                        <p>The Insect Hashira who uses poison to compensate for her lack of physical strength.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Demons -->
+                <div class="character-card" data-category="demons upper-moons" id="muzan">
+                    <div class="character-img">
+                        <img src="../images/muzan-full.jpg" alt="Muzan Kibutsuji">
+                    </div>
+                    <div class="character-info">
+                        <h3>Muzan Kibutsuji</h3>
+                        <p><strong>Rank:</strong> Demon King</p>
+                        <p>The first demon and progenitor of all other demons in existence.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="demons upper-moons" id="akaza">
+                    <div class="character-img">
+                        <img src="../images/akaza-full.jpg" alt="Akaza">
+                    </div>
+                    <div class="character-info">
+                        <h3>Akaza</h3>
+                        <p><strong>Rank:</strong> Upper Moon Three</p>
+                        <p>A powerful demon who seeks out strong opponents and respects martial artists.</p>
+                        <a href="#" class="btn">Full Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Categories -->
+    <section class="character-categories">
+        <div class="container">
+            <h2 class="section-title">Character Categories</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/demon-slayers-cat.jpg') no-repeat center center/cover;">
+                    <h3>Demon Slayers</h3>
+                    <p>Members of the Demon Slayer Corps</p>
+                </a>
+                <a href="#" class="category-card" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hashira-cat.jpg') no-repeat center center/cover;">
+                    <h3>Hashira</h3>
+                    <p>The nine strongest Demon Slayers</p>
+                </a>
+                <a href="#" class="category-card" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/demons-cat.jpg') no-repeat center center/cover;">
+                    <h3>Demons</h3>
+                    <p>Creatures that feed on humans</p>
+                </a>
+                <a href="#" class="category-card" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/upper-moons-cat.jpg') no-repeat center center/cover;">
+                    <h3>Twelve Kizuki</h3>
+                    <p>Muzan's elite group of demons</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>The Demon Slayer Wiki is a fan-made encyclopedia dedicated to the Kimetsu no Yaiba series.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="home.html">Home</a>
+                    <a href="history.html">History</a>
+                    <a href="manga.html">Manga</a>
+                    <a href="anime.html">Anime</a>
+                    <a href="characters.html">Characters</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@demonslayerwiki.com</p>
+                    <a href="contact.html" class="btn">Contact Form</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Demon Slayer Wiki. All rights reserved. Kimetsu no Yaiba is property of Koyoharu Gotouge, Shueisha, and ufotable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

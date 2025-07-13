@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer Wiki | Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/demoicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div>
+                <img id="logo" src="../images/logohead.png" alt="Demon Slayer Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="manga.html">Manga</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="login.html" class="btn">Login</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Banner -->
+    <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/login-bg.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <h1>Welcome Back, Slayer</h1>
+            <p>Login to access your account and contribute to the wiki</p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-image">
+                    <img src="../images/login-character.png" alt="Tanjiro Login">
+                </div>
+                <div class="login-form-container">
+                    <h2 class="section-title">Login to Your Account</h2>
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" placeholder="Enter your password" required>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn login-btn">Login</button>
+                        <div class="social-login">
+                            <p>Or login with:</p>
+                            <div class="social-buttons">
+                                <a href="#" class="social-btn google"><i class="fab fa-google"></i> Google</a>
+                                <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            </div>
+                        </div>
+                        <div class="register-link">
+                            <p>Don't have an account? <a href="register.html">Register here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Create an Account?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Contribute Content</h3>
+                    <p>Help expand the wiki by adding or editing articles about your favorite characters, arcs, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Save Favorites</h3>
+                    <p>Bookmark your favorite characters, episodes, and manga volumes for quick access later.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Join Discussions</h3>
+                    <p>Participate in community discussions and share your thoughts about the series.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>The Demon Slayer Wiki is a fan-made encyclopedia dedicated to the Kimetsu no Yaiba series.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="home.html">Home</a>
+                    <a href="history.html">History</a>
+                    <a href="manga.html">Manga</a>
+                    <a href="anime.html">Anime</a>
+                    <a href="characters.html">Characters</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@demonslayerwiki.com</p>
+                    <a href="contact.html" class="btn">Contact Form</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Demon Slayer Wiki. All rights reserved. Kimetsu no Yaiba is property of Koyoharu Gotouge, Shueisha, and ufotable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
