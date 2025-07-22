@@ -187,3 +187,28 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.querySelector('.video-container video');
+  
+  // Try to autoplay (helps on some mobile devices)
+  const promise = video.play();
+  
+  // If autoplay fails, show fallback
+  if (promise !== undefined) {
+    promise.catch(error => {
+      video.style.display = 'none';
+      document.querySelector('.video-container').style.backgroundImage = 'url(fallback-image.jpg)';
+    });
+  }
+});
+
+// Add scroll effect for navbar
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

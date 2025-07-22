@@ -1,0 +1,245 @@
+/* register.css - Specific styles for registration page */
+
+/* Register Section */
+.register-section {
+    padding: 80px 0;
+    background-color: var(--primary-dark);
+}
+
+.register-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.register-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.register-form-container {
+    flex: 1;
+    background-color: var(--secondary-dark);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent-red);
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--accent-red);
+    box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.3);
+    outline: none;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 38px;
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+.password-strength {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.strength-bar {
+    height: 4px;
+    flex: 1;
+    background-color: #ccc;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.strength-text {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-left: 10px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.terms label {
+    margin-bottom: 0;
+    color: var(--text-light);
+    font-weight: normal;
+}
+
+.terms a {
+    color: var(--accent-red);
+    text-decoration: underline;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    background-color: var(--accent-red);
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: var(--accent-red-dark);
+    transform: translateY(-3px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link p {
+    color: var(--text-gray);
+}
+
+.login-link a {
+    color: var(--accent-red);
+    font-weight: bold;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background-color: var(--secondary-dark);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: var(--primary-dark);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--accent-red);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .register-container {
+        flex-direction: column;
+    }
+    
+    .register-image {
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+    
+    .register-form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .register-section, .features-section {
+        padding: 60px 0;
+    }
+    
+    .register-form-container {
+        padding: 30px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-form .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .form-group input {
+        padding: 12px 15px 12px 35px;
+    }
+    
+    .input-icon {
+        font-size: 0.9rem;
+    }
+}
